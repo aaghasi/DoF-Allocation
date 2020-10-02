@@ -18,11 +18,11 @@ plotSpacing = 10; % Only for visualization purposes. At the end when
                   % number, only a portion of them (by spacing plotSpacing)
                   % will be plotted
                   
-outputFileName = 'MAT Files/RawProfileTrains.mat'; % The file name for 
+outputFileName = 'MAT_Files/RawProfileTrains.mat'; % The file name for 
                                                    % saving the DoF profile 
                                                    % train        
 
-load('MAT Files/BaseProfile.mat')  % Loading the DoF profile based on the 
+load('MAT_Files/BaseProfile.mat')  % Loading the DoF profile based on the 
                                    % measurements  performed in the 
                                    % following paper:
                                    % Marcos, Susana, Esther Moreno, and 
@@ -46,7 +46,7 @@ D_maxGlobal = 7.083/(1 + exp(0.2031*(1-36.2)-0.6109)); % D_max is the
             % maximum diopter range or diopter amplitude that is calculated 
             % based  on age and Anderson data with the above given function
             % Please see :
-            % "Minus-Lens–Stimulated Accommodative Amplitude Decreases 
+            % "Minus-Lensâ€“Stimulated Accommodative Amplitude Decreases 
             % Sigmoidally with Age: A Study of Objectively Measured 
             % Accommodative Amplitudes from Age 3
             % D_maxGlobal is the maximum of D_max among all ages, which
