@@ -6,12 +6,12 @@ clear all;
 % To create the raw profile trains, you would need to run the script
 % createDoFTrain.m, for the desired parameters and save the train as
 % RawPTrains.mat
-load('MAT Files/RawProfileTrains.mat');
+load('MAT_Files/RawProfileTrains.mat');
 
 % =========================================================================
 %% creating or reading the unweighted Pi matrix
 
-if ~isfile('MAT Files/PiMatrixUnweighted.mat') % checking if the matrix Pi 
+if ~isfile('MAT_Files/PiMatrixUnweighted.mat') % checking if the matrix Pi 
                                                % is already calculated and 
                                                % saved
     disp('creating the Pi matrix ...')
@@ -23,9 +23,9 @@ if ~isfile('MAT Files/PiMatrixUnweighted.mat') % checking if the matrix Pi
     % supplementary notes
     disp('conndensing the Pi matrix ...');
     [Pi_c, Ncount] = PiCondenser(Pi);
-    save('MAT Files/PiMatrixUnweighted.mat', 'Pi_c', 'Ncount');
+    save('MAT_Files/PiMatrixUnweighted.mat', 'Pi_c', 'Ncount');
 else
-    load('MAT Files/PiMatrixUnweighted.mat');
+    load('MAT_Files/PiMatrixUnweighted.mat');
 end
 
 % =========================================================================
@@ -57,7 +57,7 @@ ylim([0,10])
 % steps above, however, we weight the profiles age by the US population
 
 %% weighting the age axix by the US population
-load('MAT Files/ageProfile.mat'); 
+load('MAT_Files/ageProfile.mat'); 
 
 maxAge = size(profileTrain,3);
 for age = 1:maxAge
@@ -67,7 +67,7 @@ end
 % =========================================================================
 %% creating or reading the unweighted Pi matrix
 
-if ~isfile('MAT Files/PiMatrixAgeUSWeighted.mat')% checking if the matrix 
+if ~isfile('MAT_Files/PiMatrixAgeUSWeighted.mat')% checking if the matrix 
                                                  % Pi is already calculated 
                                                  % and saved
     disp('creating the Pi matrix ...')
@@ -78,9 +78,9 @@ if ~isfile('MAT Files/PiMatrixAgeUSWeighted.mat')% checking if the matrix
     % supplementary notes
     disp('conndensing the Pi matrix ...');
     [Pi_c, Ncount] = PiCondenser(Pi);
-    save('MAT Files/PiMatrixAgeUSWeighted.mat', 'Pi_c', 'Ncount');
+    save('MAT_Files/PiMatrixAgeUSWeighted.mat', 'Pi_c', 'Ncount');
 else
-    load('MAT Files/PiMatrixAgeUSWeighted.mat');
+    load('MAT_Files/PiMatrixAgeUSWeighted.mat');
 end
 
 % =========================================================================
