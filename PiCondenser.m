@@ -1,5 +1,5 @@
 function [Pi_c, Ncount] = PiCondenser(Pi)
-% function [CPi, Ncount] = PiCondenser(Pi)
+% function [Pi_c, Ncount] = PiCondenser(Pi)
 %
 % The function follows the process discussed in the supplementary notes to
 % condense the matrix Pi and create Pi_c.
