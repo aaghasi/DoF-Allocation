@@ -4,9 +4,13 @@ The code is a MATLAB implementation of the optimal depth of field (DoF) allocati
 - A. Aghasi, B. Heshmat, L. Wei, M. Tian, S. Cholewiak, "Optimal Allocation of Quantized Human Eye Depth Perception for Light Field Display Design", under review, 2020
 
 Our code uses Gurobi as the MBP/LP solver, which comes with a free license for academic use. Gurobi can be downloaded at:
+
 https://www.gurobi.com/
+
 After installing the software, it can be conveniently linked to MATLAB. For example, Mac users can use the link below to connect Gurobi and MATLAB:
+
 https://www.gurobi.com/documentation/9.0/quickstart_mac/matlab_setting_up_grb_for_.html
+
 
 
 In the following we briefly overview the main functions and scripts that need to be executed one after the other to perform a complete allocation. 
