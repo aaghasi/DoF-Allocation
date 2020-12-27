@@ -1,7 +1,7 @@
 # DoF-Allocation
 The code is a MATLAB implementation of the optimal depth of field (DoF) allocation scheme, proposed in
 
-- A. Aghasi, B. Heshmat, L. Wei, M. Tian, S. Cholewiak, "Optimal Allocation of Quantized Human Eye Depth Perception for Light Field Display Design", under review, 2020 (preprint available on Arxiv)
+- A. Aghasi, B. Heshmat, L. Wei, and M. Tian, "Optimal Allocation of Quantized Human Eye Depth Perception for 3D Display Design", under review, 2020 (preprint available on Arxiv)
 
 Our code uses Gurobi as the MBP/LP solver, which comes with a free license for academic use. Gurobi can be downloaded at:
 
